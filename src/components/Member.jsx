@@ -1,0 +1,47 @@
+import React from 'react';
+
+
+function Member(props) {
+  const logo = props.logo;
+
+  const memberId = document.getElementById("member");
+
+  console.log(memberId);
+
+  let content = 
+    <div className="row m-0 member" id="member">
+      <div className="col-12 text-center">
+        <h3>
+          Who we are and what we do
+        </h3>
+      </div>
+      <div className="col-12 text-center">
+        <h2>Our Team of Experts</h2>
+      </div>
+
+      <div className="col-12 col-md-6 col-lg-3">
+        <img src="/face.jpg" alt="" className="w-100" />
+        <div className="name text-center">Eszter Pinter</div>
+        <div className="role text-center">Role</div>
+      </div>
+      <div className="col-12 col-md-6 col-lg-3">
+        <img src="/face.jpg" alt="" className="w-100" />
+        <div className="name text-center">Bence Peter Szucs</div>
+        <div className="role text-center">Role</div>
+      </div>
+      <div className="col-12 col-md-6 col-lg-3">
+        <img src="/face.jpg" alt="" className="w-100" />
+        <div className="name text-center">Zsolt Szabo</div>
+        <div className="role text-center">Role</div>
+      </div>
+      <div className="col-12 col-md-6 col-lg-3">
+        <img src="/face.jpg" alt="" className="w-100" />
+        <div className="name text-center">Gyula Pasztor</div>
+        <div className="role text-center">Role</div>
+      </div>
+    </div>;
+
+  return content;
+}
+
+export default Member;
