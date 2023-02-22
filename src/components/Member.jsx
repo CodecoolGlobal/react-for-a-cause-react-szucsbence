@@ -2,11 +2,6 @@ import React from 'react';
 
 
 function Member(props) {
-  const logo = props.logo;
-
-  const memberId = document.getElementById("member");
-
-  console.log(memberId);
 
   let content = 
     <div className="row m-0 member" id="member">

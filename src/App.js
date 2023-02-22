@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { useEffect, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 import Header from'./components/Header.jsx'
 import Hero from'./components/Hero.jsx'
@@ -13,6 +13,19 @@ import Footer from'./components/Footer.jsx'
 
 function App() {
   const heroRef = useRef();
+  const [showToTopButton, setShowToTopButton] = useState(false)
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 800) {
+        setShowToTopButton(true);
+      } else {
+        setShowToTopButton(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   
 
   useEffect(() => {
@@ -76,26 +89,15 @@ function App() {
       <div className="container-flex footer-container">
         {<Footer />}
       </div>
+      <button
+  className="to-top-button"
+  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+  style={{ display: showToTopButton ? 'block' : 'none' }}
+>
+<i className="fa-solid fa-circle-chevron-up"></i>
+ </button>
     </div>
   );
 }
 
 export default App;
-
-
-{/*<div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>*/}

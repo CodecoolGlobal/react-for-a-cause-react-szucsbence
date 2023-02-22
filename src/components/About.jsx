@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function About(props) {
-  const logo = props.logo;
+ 
 
   let content = 
     <div className="row m-0 about">

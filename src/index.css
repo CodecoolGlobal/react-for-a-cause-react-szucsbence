@@ -258,3 +258,23 @@ input[type="text"], input[type="email"], textarea{
   text-align: right;
   position: relative;
 }
+
+.to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 2px solid #272727;
+  background-color: #555;
+  color: rgb(255, 255, 255);
+  padding: 0px;
+  border-radius: 25px;
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 20;
+}
+
+.thankYou{
+  margin-bottom: 55px;
+  font-size: 20px;
+}

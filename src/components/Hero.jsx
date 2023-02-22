@@ -1,11 +1,23 @@
 import React from 'react';
 import { useEffect, useRef } from 'react';
 
+
 function Hero(props) {
 	const heroRef = useRef();
 	const aboutRef = useRef();
 	const contactRef = useRef();
+	
+	const HandleClickAbout = () => {
+		const memberId = document.getElementById("member")
+		const offset = memberId.getBoundingClientRect()
+		window.scrollTo({top: offset.top, behavior: "smooth"})
+		}
 
+	const HandleClickContact = () => {
+			const memberId = document.getElementById("contact")
+			const offset = memberId.getBoundingClientRect()
+			window.scrollTo({top: offset.top, behavior: "smooth"})
+			}
 
 	useEffect(() => {
 	let timeOut = setTimeout(() => {
@@ -31,7 +43,7 @@ function Hero(props) {
 
 	    	<div className="col-12 d-flex align-items-end justify-content-end flex-column ">
 	    		<div className="programmer">
-	    			<img src="/programmer.png" />
+	    			<img src="/programmer.png" alt="programmer"/>
 	    		</div>
 	    		<h1 className="text-center">
 	    			For a Good Cause
@@ -40,14 +52,13 @@ function Hero(props) {
 	    	<div className="col-12">
 	    		<div className="row m-0 p-0">
 	    			<div className="col-6 about_bbox position-relative">
-						<div className="big_button about_button" ref={aboutRef}>About</div>
+						<div className="big_button about_button" ref={aboutRef} onClick={HandleClickAbout}>About</div>
 					</div>
 					<div className="col-6 contact_bbox position-relative">
-						<div className="big_button contact_button" ref={contactRef}>Contact</div>
+						<div className="big_button contact_button" ref={contactRef} onClick={HandleClickContact}>Contact</div>
 					</div>
 	    		</div>
 	    	</div>
-
 	    </div>;
 
 	return content;
