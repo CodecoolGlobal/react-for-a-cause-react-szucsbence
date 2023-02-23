@@ -9,7 +9,7 @@ function Challenge(props) {
       <hr className="separator" />
       <div className="col-12 text-center">
         <h3>
-          Because always have a problem
+          Some bumps in our road to reach our goals
         </h3>
       </div>
       <div className="col-12 text-center">

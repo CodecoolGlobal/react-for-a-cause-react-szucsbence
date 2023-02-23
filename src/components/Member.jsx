@@ -15,23 +15,23 @@ function Member(props) {
       </div>
 
       <div className="col-12 col-md-6 col-lg-3">
-        <img src="/face.jpg" alt="" className="w-100" />
-        <div className="name text-center">Eszter Pinter</div>
-        <div className="role text-center">Role</div>
-      </div>
-      <div className="col-12 col-md-6 col-lg-3">
-        <img src="/face.jpg" alt="" className="w-100" />
+        <img src="/Bence.jpg" alt="" className="w-100" />
         <div className="name text-center">Bence Peter Szucs</div>
         <div className="role text-center">Role</div>
       </div>
       <div className="col-12 col-md-6 col-lg-3">
-        <img src="/face.jpg" alt="" className="w-100" />
-        <div className="name text-center">Zsolt Szabo</div>
+        <img src="/Eszter.jpg" alt="" className="w-100" />
+        <div className="name text-center">Eszter Pinter</div>
         <div className="role text-center">Role</div>
       </div>
       <div className="col-12 col-md-6 col-lg-3">
-        <img src="/face.jpg" alt="" className="w-100" />
+        <img src="/Gyula.jpg" alt="" className="w-100" />
         <div className="name text-center">Gyula Pasztor</div>
+        <div className="role text-center">Role</div>
+      </div>
+      <div className="col-12 col-md-6 col-lg-3">
+        <img src="/Zsolti.jpg" alt="" className="w-100" />
+        <div className="name text-center">Zsolt Szabo</div>
         <div className="role text-center">Role</div>
       </div>
     </div>;
