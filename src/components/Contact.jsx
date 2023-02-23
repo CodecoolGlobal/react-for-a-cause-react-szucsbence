@@ -37,20 +37,20 @@ function Contact(props) {
       <div className="col-12 text-center">
         <h2>Contact us</h2>
       </div>
-      <div className="col-3"></div>
+      <div className="d-none d-lg-block col-3"></div>
       {formOrThankyou? Form() : Thankyou()}
-      <div className="col-3"></div>
+      <div className="d-none d-lg-block col-3"></div>
     </div>;
 
   return content;
 }
 
   function Form(props){
-    return <div className="col-6">
-        <div className="d-inline-block w-50 pe-1">
+    return <div className="col-12 col-lg-6">
+        <div className="d-inline-block names">
           <input type="text" name="fname" className="w-100" placeholder="First name" ref={fName}/>
         </div>
-        <div className="d-inline-block w-50 ps-1">
+        <div className="d-inline-block names">
           <input type="text" name="lname" className="w-100" placeholder="Last name" ref={lName}/>
         </div>
         <input type="email" name="email" className="w-100" placeholder="Email" ref={email}/>

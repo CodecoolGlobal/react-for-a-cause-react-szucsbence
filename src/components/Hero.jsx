@@ -35,6 +35,8 @@ function Hero(props) {
 		hero.classList.add("trans")
 		about.classList.add("trans")
 		contact.classList.add("trans")
+
+		document.getElementsByTagName("body")[0].classList.remove("overflow-hidden")
 	}
 
 

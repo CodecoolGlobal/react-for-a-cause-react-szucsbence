@@ -278,3 +278,22 @@ input[type="text"], input[type="email"], textarea{
   margin-bottom: 55px;
   font-size: 20px;
 }
+
+.names{
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .names {
+    padding-left: 7.5px;
+    width: 50%;
+  }
+  .names:first-child{
+    padding-right: 7.5px;
+    padding-left: 0px;
+  }
+ /* .names:nth-child(2){
+    padding-left: 7.5px;
+  }*/
+}
+
