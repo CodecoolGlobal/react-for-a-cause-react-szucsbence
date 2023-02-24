@@ -17,22 +17,22 @@ function Member(props) {
       <div className="col-12 col-md-6 col-lg-3">
         <img src="/Bence.jpg" alt="" className="w-100" />
         <div className="name text-center">Bence Peter Szucs</div>
-        <div className="role text-center">Role</div>
+        <div className="role text-center">Catering and Hair Manager</div>
       </div>
       <div className="col-12 col-md-6 col-lg-3">
         <img src="/Eszter.jpg" alt="" className="w-100" />
         <div className="name text-center">Eszter Pinter</div>
-        <div className="role text-center">Role</div>
+        <div className="role text-center">CEO and Key Account- and Development- and Everything Manager</div>
       </div>
       <div className="col-12 col-md-6 col-lg-3">
         <img src="/Gyula.jpg" alt="" className="w-100" />
         <div className="name text-center">Gyula Pasztor</div>
-        <div className="role text-center">Role</div>
+        <div className="role text-center">Bootstrap Ninja</div>
       </div>
       <div className="col-12 col-md-6 col-lg-3">
         <img src="/Zsolt.jpg" alt="" className="w-100" />
         <div className="name text-center">Zsolt Szabo</div>
-        <div className="role text-center">Role</div>
+        <div className="role text-center">Marketing Wizard</div>
       </div>
     </div>;
 
